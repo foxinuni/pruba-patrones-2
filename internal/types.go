@@ -23,14 +23,14 @@ const (
 )
 
 const (
-	DistrictUsaquen       = "USAQUEN"
+	DistrictUsaquen       = "USAQUÉN"
 	DistrictChapinero     = "CHAPINERO"
 	DistrictSantaFe       = "SANTA FE"
-	DistrictSanCristobal  = "SAN CRISTOBAL"
+	DistrictSanCristobal  = "SAN CRISTÓBAL"
 	DistrictUsme          = "USME"
 	DistrictKenedy        = "KENNEDY"
-	DistrictFontibon      = "FONTIBON"
-	DistrictEngativa      = "ENGATIVA"
+	DistrictFontibon      = "FONTIBÓN"
+	DistrictEngativa      = "ENGATIVÁ"
 	DistrictSuba          = "SUBA"
 	DistrictBarriosUnidos = "BARRIOS UNIDOS"
 	DistrictTeusaquillo   = "TEUSAQUILLO"
@@ -39,8 +39,9 @@ const (
 	DistrictPuenteAranda  = "PUENTE ARANDA"
 	DistrictLaCandelaria  = "LA CANDELARIA"
 	DistrictRafaelUribe   = "RAFAEL URIBE URIBE"
-	DistrictCiudadBolivar = "CIUDAD BOLIVAR"
+	DistrictCiudadBolivar = "CIUDAD BOLÍVAR"
 	DistrictSumapaz       = "SUMAPAZ"
+	DistrictBosa          = "BOSA"
 )
 
 const (

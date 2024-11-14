@@ -116,6 +116,11 @@ func (p *ExcelParser) EntryWorker(incomming <-chan Line, errors chan<- LinedErro
 }
 
 func ParseEntry(row []string) (*Entry, error) {
+	// check if the amount of rows is correct
+	if len(row) != 15 {
+		return nil, fmt.Errorf("invalid amount of columns")
+	}
+
 	// birthday
 	birthdate, err := time.Parse("2/1/2006", strings.TrimSpace(row[4]))
 	if err != nil {
@@ -216,6 +221,7 @@ func ValidateEntry(entry *Entry) error {
 		DistrictRafaelUribe,
 		DistrictCiudadBolivar,
 		DistrictSumapaz,
+		DistrictBosa,
 	}
 	if !InSlice(entry.District, districts) {
 		return fmt.Errorf("district %q must be one of %v", entry.District, districts)
